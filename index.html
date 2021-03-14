@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="reset.css">
+  <title>MINDFOOD</title>
+
+</head>
+<body>
+  <pre id="object"></pre>
+
+  <div class="container">
+    <div class="title">
+      <h1>MIND FOOD</h1>
+      <p>It's not too late to write down.</p>
+    </div>
+    <div class="bar">
+      <button class="newBook">NEW BOOK</button>
+      <div class="bookCount">
+        <div class="bookTotal">TOTAL BOOKS: <span>0</span></div>
+        <div class="bookHaveRead">HAVE READ: <span>0</span></div>
+        <div class="bookWillRead">WILL READ: <span>0</span></div>
+      </div>
+    </div>
+    <div class="modal">
+      <div class="modalContent">
+        <div class="modalHeader">
+          <h2>ADD BOOK</h2>
+          <span class="close">&times;</span>
+
+        </div>
+        <div class="modalBody">
+          <form>
+            <div class="titleForm">
+              <p for="titleInput">Title</p>
+              <input type="text" name="titleInput" id="title" data-value="Title">
+            </div>
+            <div class="authorForm">
+              <p for="authorInput">Author</p>
+              <input type="text" name="authorInput" id="author" data-value="Author">
+            </div>
+            <div class="statusForm">
+              <p id="hi">Have you read this book?</p>
+              <input type="radio" name="bookStatus" id="haveRead" value="have">
+              <label for="status">YES</label>
+              <input type="radio" name="bookStatus" id="willRead" value="will">
+              <label for="status">NO</label>
+            </div>
+            <div class="addButtonDiv">
+              <button type="button">ADD</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="shelfContainer">
+      <ul class="bookshelf"></ul>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+  
+  
+  
+  <script src="app.js"></script>
+</body>
+</html>
